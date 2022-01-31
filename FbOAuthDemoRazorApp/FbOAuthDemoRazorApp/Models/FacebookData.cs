@@ -13,10 +13,8 @@ namespace FbOAuthDemoRazorApp.Models
         public string Email { get; set; }
         [JsonProperty("first_name")]
         public string FirstName { get; set; }
-
         [JsonProperty("last_name")]
         public string LastName { get; set; }
-
         [JsonProperty("hometown")]
         public Hometown Hometown { get; set; }
         [JsonProperty("birthday")]
