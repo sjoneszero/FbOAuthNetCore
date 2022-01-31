@@ -53,7 +53,7 @@ namespace FbOAuthDemoRazorApp.Controllers.API
             [FromQuery(Name = "error_description")] string errorDescription = null
             )
         {
-            if (string.IsNullOrEmpty(error))
+            if (!string.IsNullOrEmpty(error))
                 return Unauthorized(); 
 
             var accessTokenResponse = await _facebookAuthService.GetAccessToken(code);
