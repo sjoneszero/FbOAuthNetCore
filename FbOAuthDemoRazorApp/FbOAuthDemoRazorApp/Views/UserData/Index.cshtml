@@ -17,7 +17,7 @@
             @Html.DisplayFor(model => model.Id)
         </dd>
         <dt class="col-sm-2">
-           Full Name
+            Full Name
         </dt>
         <dd class="col-sm-10">
             @Model.FirstName&nbsp;@Model.LastName
@@ -33,6 +33,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Birthday)
+        </dd>
+        <dt class="col-sm-2">
+            Hometown
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Hometown.Name)
         </dd>
     </dl>
 </div>
